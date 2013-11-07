@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Interfaz
+{
+    class Acceso
+    {
+        private string usuario = "Neymar";
+        private string contrasena = "10";
+        
+
+        public void revisar(string usuarioForma, string contraForma) 
+        {
+            DialogResult result;
+            if(usuarioForma == this.usuario)
+            {
+                if (contraForma == this.contrasena) 
+                {
+                    result = MessageBox.Show("Has Iniciado Secion *** Neymar Es El Mejor Del Mundo***");
+                }
+                else
+                {
+                    result = MessageBox.Show("Contraseña incorrecta");
+                }
+            }
+            else
+            {
+                result = MessageBox.Show("Usuario incorrecto");
+            }
+        }
+
+
+
+    }
+}
